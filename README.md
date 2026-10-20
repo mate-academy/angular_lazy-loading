@@ -7,8 +7,12 @@ Zadanie z modułu Angular. Repozytorium zawiera kod startowy aplikacji Moonbase 
 Skonfiguruj Lazy Loading dla widoku Missions.
 
 #### 1. Skonfiguruj Lazy Loading
+- Zmień eksport komponentu `Missions` na domyślny: `export default class Missions`.
 - Usuń statyczny import komponentu.
 - Wykorzystaj `loadComponent` oraz dynamiczny `import()`.
+
+💡 Dzięki domyślnemu eksportowi `loadComponent: () => import('./features/missions/missions')` nie wymaga wskazywania nazwy klasy komponentu.
+
 💡 Komponent powinien zostać pobrany dopiero podczas pierwszego przejścia na stronę.
 
 #### 2. Zweryfikuj działanie
